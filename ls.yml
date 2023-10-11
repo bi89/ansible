@@ -4,12 +4,16 @@
   tasks:
     - name: list file
       command: pwd
-      register: command_output
+      register: command_output1
 
     - name: list file
       command: whoami
-      register: command_output
+      register: command_output2
 
     - name: Display command output
       debug:
-       var: command_output.stdout_lines
+       var: command_output1.stdout_lines
+
+    - name: Display command output
+      debug:
+       var: command_output2.stdout_lines
