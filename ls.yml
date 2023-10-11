@@ -1,5 +1,5 @@
 ---
-- name: ping 8.8.8.8
+- name: ls
   hosts: boon-server
   tasks:
     - name: list file
