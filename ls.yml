@@ -3,7 +3,11 @@
   hosts: boon-server
   tasks:
     - name: list file
-      command: ls -a
+      command: pwd
+      register: command_output
+
+    - name: list file
+      command: whoami
       register: command_output
 
     - name: Display command output
