@@ -1,0 +1,6 @@
+---
+- name: ping 8.8.8.8
+  hosts: servers
+  tasks:
+    - name: Run uptime command
+      command: ping 8.8.8.8
