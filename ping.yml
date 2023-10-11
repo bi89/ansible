@@ -1,6 +1,6 @@
 ---
 - name: ping 8.8.8.8
-  hosts: servers
+  hosts: boon-server
   tasks:
-    - name: Run uptime command
-      command: ping 8.8.8.8
+    - name: list file
+      command: ls -a
