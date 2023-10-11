@@ -4,3 +4,8 @@
   tasks:
     - name: list file
       command: ls -a
+      register: command_output
+
+    - name: Display command output
+      debug:
+      var: command_output.stdout_lines
